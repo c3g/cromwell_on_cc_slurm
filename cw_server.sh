@@ -5,4 +5,5 @@
 #SBATCH --job-name c3g_cromwell
 #SBATCH --chdir /project/rrg-bourqueg-ad/C3G/projects/CROMWELL_SERVER
 
-java -Dconfig.file=/home/poq/c3g/cromwell_on_cc_slurm/cc_cromwell.conf -jar /home/poq/CROMWELL/cromwell-52.jar   server
+CROMWELL=${CROMWELL:-/home/poq/CROMWELL} 
+java -Dconfig.file=/home/poq/c3g/cromwell_on_cc_slurm/cc_cromwell.conf -jar $CROMWELL/cromwell-52.jar   server

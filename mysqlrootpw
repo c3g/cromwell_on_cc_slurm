@@ -1,0 +1,1 @@
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('un_mot_de_passe');
