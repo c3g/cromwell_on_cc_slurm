@@ -750,7 +750,7 @@ database {
   db {
     driver = "org.hsqldb.jdbcDriver"
     url = """
-    jdbc:hsqldb:file:__DATA_BASE_ROOT__/cromwell-executions/cromwell-db/cromwell-db;
+    jdbc:hsqldb:file:__DATA_BASE_ROOT__cromwell-executions/cromwell-db/cromwell-db;
     shutdown=false;
     hsqldb.default_table_type=cached;hsqldb.tx=mvcc;
     hsqldb.result_max_memory_rows=10000;
